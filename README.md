@@ -1,4 +1,4 @@
-# Jenkins Laboratory, for Educational Purpose
+# Jenkins Laboratory, (only for Educational Purposes)
 
 ##Preparación del entorno, iniciar Docker en nuestro equipo.
 
@@ -8,7 +8,7 @@ Clonar repositorio jenkins-lab a nuestra máquina local.
 ```bash
 git clone https://github.com/nuk3sk4te/jenkins-lab.git
 ```
-# Es necesario montar un volumen persistente para no perder las configs.
+## Es necesario montar un volumen persistente para no perder las configs.
 
 ```bash
 docker volume create jenkins-data
