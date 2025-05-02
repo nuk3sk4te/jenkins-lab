@@ -26,9 +26,8 @@ wsl.exe --set-default Ubuntu-24.04
 o ejecutamos con: 
 
 ```bash
-wsl.exe --set-default Ubuntu-24.04
+wsl.exe -d Ubuntu-24.04
 ```
-
 
 Clonar repositorio jenkins-lab a nuestra máquina local.
 
