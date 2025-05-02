@@ -4,10 +4,16 @@
 
 Clonar repositorio jenkins-lab a nuestra máquina local.
 
-
 ```bash
 git clone https://github.com/nuk3sk4te/jenkins-lab.git
 ```
+
+Nos movemos dentro del directorio de trabajo.
+
+```bash
+cd jenkins-data
+```
+
 ## Es necesario montar un volumen persistente para no perder las configs.
 
 ```bash
