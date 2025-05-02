@@ -6,14 +6,36 @@ IMPORTANTE Para Sistemas Windows !! Entrar a WSL
 
 ![image](https://github.com/user-attachments/assets/b16ca45d-0395-42f8-890d-5bd23e761090)
 
+Si no tenemos disponible sistema ubuntu instalarlo.
+
+```bash
+wsl.exe -l
+```
+Si solo nos aparece docker-desktop instalar Ubuntu
+
+![image](https://github.com/user-attachments/assets/eed3e651-8333-425d-832e-e1fdf97cba40)
+
+```bash
+wsl.exe --install Ubuntu-24.04
+```
+Si ubuntu no es el sistema prederteminado de WSL, lo cambiaremos con:
+
+```bash
+wsl.exe --set-default Ubuntu-24.04
+```
+o ejecutamos con: 
+
+```bash
+wsl.exe --set-default Ubuntu-24.04
+```
+
+
 Clonar repositorio jenkins-lab a nuestra máquina local.
 
 ```bash
 git clone https://github.com/nuk3sk4te/jenkins-lab.git
 ```
 ![image](https://github.com/user-attachments/assets/e6d5d88c-2b35-4473-bde3-b4f8013ed752)
-
-
 
 Nos movemos dentro del directorio de trabajo.
 
@@ -41,6 +63,18 @@ Para permitir desplegar sobre el daemon docker del sistema anfitrion, montamos e
 
 Acceder vía web al contenedor que acabamos de levantar
 http://localhost:8080
+
+![image](https://github.com/user-attachments/assets/cc724bcc-3a43-40d3-b2d7-22f0510c2b8a)
+
+Easy way:
+```bash
+docker logs jenkins-cicd 
+```
+Copiar la contraseña generada durante la instalacion y copiarla en la casilla de Administrator password para continuar
+
+![image](https://github.com/user-attachments/assets/30fd40b1-62c4-4379-a5e0-46061160bdc7)
+
+
 
 Instalar plugins recomemdados de Jenkins.
 
