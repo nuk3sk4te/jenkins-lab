@@ -71,13 +71,11 @@ docker logs jenkins-cicd
 ```
 Copiar la contraseña generada durante la instalacion y copiarla en la casilla de Administrator password para continuar
 
-![image](https://github.com/user-attachments/assets/30fd40b1-62c4-4379-a5e0-46061160bdc7)
-
-
-
 Instalar plugins recomemdados de Jenkins.
+![image](https://github.com/user-attachments/assets/d4b61aae-8c59-4a0d-b6d9-82eab3986f70)
 
-
+Cambiar la contraseña de administrador y guardarla en el gestor de contraseñas, si no lo hacemos podemos perder acceso a Jenkins
+![image](https://github.com/user-attachments/assets/128dbe3c-9c77-4684-96de-188495c3b5b2)
 
 
 ## WARNING !!! Exponer el daemon de docker dentro del contenedor es una mala práctica de seguridad solo utilizar para fines educativos.
