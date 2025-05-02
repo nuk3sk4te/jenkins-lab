@@ -4,7 +4,7 @@ Preparación del entorno, iniciar Docker en nuestro equipo.
 
 IMPORTANTE Para Sistemas Windows !! Entrar a WSL 
 
-![image](https://github.com/user-attachments/assets/b16ca45d-0395-42f8-890d-5bd23e761090)
+Desde inicio de Windows, Buscar wsl y ejecutarlo
 
 Si no tenemos disponible sistema ubuntu instalarlo.
 
