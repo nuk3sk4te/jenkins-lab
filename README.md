@@ -2,16 +2,23 @@
 
 Preparación del entorno, iniciar Docker en nuestro equipo.
 
+IMPORTANTE Para Sistemas Windows !! Entrar a WSL 
+
+![image](https://github.com/user-attachments/assets/b16ca45d-0395-42f8-890d-5bd23e761090)
+
 Clonar repositorio jenkins-lab a nuestra máquina local.
 
 ```bash
 git clone https://github.com/nuk3sk4te/jenkins-lab.git
 ```
+![image](https://github.com/user-attachments/assets/e6d5d88c-2b35-4473-bde3-b4f8013ed752)
+
+
 
 Nos movemos dentro del directorio de trabajo.
 
 ```bash
-cd jenkins-data
+cd jenkins-lab
 ```
 
 Es necesario montar un volumen persistente para no perder las configs.
