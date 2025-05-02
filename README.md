@@ -71,7 +71,7 @@ docker logs jenkins-cicd
 ```
 Copiar la contraseña generada durante la instalacion y copiarla en la casilla de Administrator password para continuar
 
-Instalar plugins recomemdados de Jenkins.
+Instalar plugins recomendados de Jenkins.
 ![image](https://github.com/user-attachments/assets/d4b61aae-8c59-4a0d-b6d9-82eab3986f70)
 
 Cambiar la contraseña de administrador y guardarla en el gestor de contraseñas, si no lo hacemos podemos perder acceso a Jenkins
