@@ -41,8 +41,18 @@ RUN chown -R jenkins:jenkins /opt/maven && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
+# Add jenins user to sudo group
+RUN usermod -aG sudo jenkins
+
+# Ensure jenkins user exists with empty password
+RUN id -u jenkins &>/dev/null || useradd -m -s /bin/bash jenkins && \
+    echo "jenkins:jenkins" | chpasswd && \
+    adduser jenkins sudo
+
 # Switches back to jenkins user for Jenkins execution
-#USER jenkins
+USER jenkins
+
 
 # Sets the Maven directory in the environment
 ENV PATH="${MAVEN_HOME}/bin:${PATH}"
+
