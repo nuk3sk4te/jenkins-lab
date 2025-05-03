@@ -42,7 +42,7 @@ RUN chown -R jenkins:jenkins /opt/maven && \
     rm -rf /var/lib/apt/lists/*
 
 # Switches back to jenkins user for Jenkins execution
-USER jenkins
+#USER jenkins
 
 # Sets the Maven directory in the environment
 ENV PATH="${MAVEN_HOME}/bin:${PATH}"
