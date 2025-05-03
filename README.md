@@ -51,7 +51,7 @@ docker volume create jenkins-data
 Construir la imagen a partir del Dockerfile
 
 ```bash
-docker build -t jenkins-custom -f Dockerfile .
+docker build --no-cache -t jenkins-custom -f Dockerfile .
 ```
 
 Ejecutar el contenedor Jenkins
