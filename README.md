@@ -33,7 +33,7 @@ wsl.exe -d Ubuntu-24.04
 Clonar repositorio jenkins-lab a nuestra máquina local.
 
 ```bash
-git clone https://github.com/nuk3sk4te/jenkins-lab.git
+git clone https://github.com/P1-FemCoders-VLC/jenkins-lab.git
 ```
 ![image](https://github.com/user-attachments/assets/e6d5d88c-2b35-4473-bde3-b4f8013ed752)
 
