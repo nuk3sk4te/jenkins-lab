@@ -42,7 +42,9 @@ RUN chown -R jenkins:jenkins /opt/maven && \
     rm -rf /var/lib/apt/lists/*
 
 # Add jenins user to sudo group
-RUN usermod -aG sudo jenkins
+RUN usermod -aG sudo jenkins && \
+    echo "jenkins ALL=(ALL) NO PASSWD:ALL" >> /etc/sudoers && \
+    usermod -aG docker jenkins
 
 # Ensure jenkins user exists with empty password
 RUN id -u jenkins &>/dev/null || useradd -m -s /bin/bash jenkins && \
