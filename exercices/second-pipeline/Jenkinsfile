@@ -9,6 +9,21 @@ pipeline {
                 // Execute some commands to test pipeline
             }
         }
+
+        stage('Test2') {
+            steps {
+                sh 'echo "Comprobando que el contenedor Jenkins se está ejecutando en Docker"'
+                sh '''
+                    if docker ps --format '{{.Names}}' | grep -q 'jenkins-custom-test'; then
+                        echo "El contenedor jenkins-custom-test existe."
+                    else
+                        echo "El contenedor no existe."
+                        exit 1
+                    fi
+                '''
+                // Execute some commands to test pipeline
+            }
+        }
   
     }
  }
