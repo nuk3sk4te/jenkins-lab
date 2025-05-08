@@ -24,7 +24,7 @@ Si ubuntu no es el sistema prederteminado de WSL, lo cambiaremos con:
 wsl.exe --set-default Ubuntu-24.04
 ```
 
-Clonar repositorio jenkins-lab a nuestra máquina local.
+Clonar repositorio jenkins-lab a nuestra máquina local. (Podeis utilizar visual studio si os facilita la vida)
 
 ```bash
 git clone https://github.com/P1-FemCoders-VLC/jenkins-lab.git
