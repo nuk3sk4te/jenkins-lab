@@ -1,0 +1,14 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Test') {
+            steps {
+                sh 'echo "Ejecutando pruebas..."'
+                // Execute some commands to test pipeline
+            }
+        }
+  
+    }
+ }
