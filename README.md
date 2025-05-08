@@ -2,10 +2,9 @@
 
 Preparación del entorno, iniciar Docker en nuestro equipo.
 
-IMPORTANTE Para Sistemas Windows !! Entrar a WSL 
+IMPORTANTE Para Sistemas Windows !! Entrar en linea de comandos 
 
-Desde inicio de Windows, Buscar wsl y ejecutarlo
-![image](https://github.com/user-attachments/assets/16492faf-fddb-4c75-b2a8-121c71d372ef)
+Desde inicio de Windows, Buscar cmdds y ejecutarlo
 
 Si no tenemos disponible sistema ubuntu instalarlo.
 
@@ -24,13 +23,8 @@ Si ubuntu no es el sistema prederteminado de WSL, lo cambiaremos con:
 ```bash
 wsl.exe --set-default Ubuntu-24.04
 ```
-o ejecutamos con: 
 
-```bash
-wsl.exe -d Ubuntu-24.04
-```
-
-Clonar repositorio jenkins-lab a nuestra máquina local.
+Clonar repositorio jenkins-lab a nuestra máquina local. (Podeis utilizar visual studio si os facilita la vida)
 
 ```bash
 git clone https://github.com/P1-FemCoders-VLC/jenkins-lab.git
