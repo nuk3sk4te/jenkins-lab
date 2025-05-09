@@ -10,6 +10,13 @@ pipeline {
             }
         }
 
+        stage("Env Build Number"){
+            steps{
+                echo "The build number is ${env.BUILD_NUMBER}"
+                echo "You can also use \${BUILD_NUMBER} -> ${BUILD_NUMBER}"                                                
+            }
+        }
+    
         stage('Test2') {
             steps {
                 sh 'echo "Comprobando que el contenedor Jenkins se está ejecutando en Docker"'
@@ -21,7 +28,6 @@ pipeline {
                         exit 1
                     fi
                 '''
-                // Execute some commands to test pipeline
             }
         }
   
